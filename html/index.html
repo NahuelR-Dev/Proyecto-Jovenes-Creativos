@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,26 +14,278 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
         rel="stylesheet">
 </head>
-<body>
 
+<body>
     <header>
-        <div class="contenedor">
+        <div class="menu contenedor">
             <h2 class="logo">CambioContigo</h2>
-    
-            <nav>
-                <a href="index.html" class="activo">Inicio<span></span></a>
-                <a href="Reseñas.html">Reseñas<span></span></a>
-                <a href="Nosotros.html">Nosotros<span></span></a>
-                <a href="Login.html">Log In<span></span></a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html" class="activo">Inicio<span></span></a></li>
+                    <li><a href="Reseñas.html">Reseñas<span></span></a></li>
+                    <li> <a href="Nosotros.html">Nosotros<span></span></a></li>
+                    <li> <a href="Login.html">Log In<span></span></a> </li>
+                </ul>
             </nav>
-           
+
+            <div class="">
+                <ul>
+                    <li class="submenu">
+                        <img src="/img/carriii.png" alt="">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>imagen</th>
+                                        <th>nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <a href="#" id="vaciar-carrito" class="btn-2">Vaciar carrito</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </header>
-    
-    
+
+
+
+
+    <div class="baner">
+
+    </div>
+
+    <!--Parte de ofertas-->
+
+    <section class="ofertas">
+
+
+        <div class="oferta-1">
+            <div class="oferta-img">
+                <img src="/img/cambio-1.jpg" alt="">
+            </div>
+            <div class="oferta-text">
+                <h3>Producto 1</h3>
+                <a href="#" class="btn-2"> informacion </a>
+            </div>
+        </div>
+
+        <div class="oferta-1">
+            <div class="oferta-img">
+                <img src="/img/cambio-2.jpg" alt="">
+            </div>
+            <div class="oferta-text">
+                <h3>Producto 2</h3>
+                <a href="#" class="btn-2"> informacion </a>
+            </div>
+        </div>
+
+        <div class="oferta-1">
+            <div class="oferta-img">
+                <img src="/img/cambio-3.jpg" alt="">
+            </div>
+            <div class="oferta-text">
+                <h3>Producto 3 </h3>
+                <a href="#" class="btn-2"> informacion </a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Productos-->
+
+    <main class="productos " id="lista-1">
+        <h2>Productos</h2>
+
+
+        <div class="product-contenido">
+
+            <div class="producto">
+                <img src="/img/Producto-1.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">Intercambio</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="/img/producto-2.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">Intercambio</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="/img/producto-3.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">$6000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="/img/producto-4.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">$3000</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="4">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="/img/producto-5.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">Intercambio</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="5">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="/img/producto-6.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">Intercambio</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="6">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="/img/producto-7.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">$700</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="7">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="/img/producto-8.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">Intercambio</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="8">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+            <div class="producto">
+                <img src="/img/producto-9.jpg" alt="">
+                <div class="producto-txt">
+                    <h3>Nombre</h3>
+                    <p>calidad Premium</p>
+                    <p class="precio">$1200</p>
+                    <a href="#" class="agregar-carrito " data-id="9">Agregar al carrito</a>
+
+                </div>
+            </div>
+
+         
+
+        </div>
+    </main>
+
+    <!-- 3 Reseñas -->
+
+
+
+
+
+
+
+
+    <!--Footer-->
+
+    <footer class="footer">
+        <div class="footer-conten container">
+            <div class="link">
+                <h3>lorem</h3>
+
+                <ul>
+                    <li><a href="#">lore 1</a></li>
+                    <li><a href="#">lore 2</a></li>
+                    <li><a href="#">lore 3</a></li>
+                    <li><a href="#">lore 4</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+
+                <ul>
+                    <li><a href="#">lore 1</a></li>
+                    <li><a href="#">lore 2</a></li>
+                    <li><a href="#">lore 3</a></li>
+                    <li><a href="#">lore 4</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+
+                <ul>
+                    <li><a href="#">lore 1</a></li>
+                    <li><a href="#">lore 2</a></li>
+                    <li><a href="#">lore 3</a></li>
+                    <li><a href="#">lore 4</a></li>
+                </ul>
+            </div>
+
+            <div class="link">
+                <h3>lorem</h3>
+
+                <ul>
+                    <li><a href="#">lore 1</a></li>
+                    <li><a href="#">lore 2</a></li>
+                    <li><a href="#">lore 3</a></li>
+                    <li><a href="#">lore 4</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </footer>
+
 </body>
+
 </html>

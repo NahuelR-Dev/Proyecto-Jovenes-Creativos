@@ -1,12 +1,20 @@
 :root {
-    --FondoPrincipal: #121212;
-    --FondoSecundario: #1E1E1E;
-    --TextoPrincipal: #FFFFFF;
-    --TextosSecundarios: #B0B0B0;
-    --BotonesPrimarios: #FF3D00;
-    --BotonesSecundarios: #007BFF;
-    --Encabezado: #FFD700;
+    --FondoPrincipal: #121212; 
+    --FondoSecundario: #1E1E1E; 
+    --TextoPrincipal: #E0E0E0; 
+    --TextosSecundarios: #B0B0B0; 
+    --BotonesPrimarios: #4CAF50; 
+    --BotonesSecundarios: #2196F3; 
+    --Encabezado: #FF5722; 
+    --TituloProducto: #80CBC4;
+    --MegaTitulo: #42A5F5;
+    --FondoFooter: #222222;
 }
+
+
+
+
+
 
 
 * {
@@ -27,16 +35,15 @@ body {
     margin: auto;
 }
 
-header {
-    padding: 30px 0;
-}
-
-header .contenedor {
+.menu {
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
+    justify-content: space-between;
 
+}
 
 .logo {
     font-family: "Lobster", sans-serif;
@@ -44,6 +51,16 @@ header .contenedor {
     color: var(--Encabezado);
     font-size: 40px;
 }
+
+.navbar ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+
+
+
 
 
 /* Menu navegacion*/
@@ -86,6 +103,49 @@ header nav a.activo {
     border-radius: 30px;
 }
 
+/*Parte del carrito del header*/
+.submenu {
+    position: relative;
+    list-style: none;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4E4B5075;
+    padding: 20PX;
+    min-width: 400px;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    color: var(--TextoPrincipal);
+}
+
+.borrar {
+    background-color: #121212;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--TextoPrincipal);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+
 /*Empiezo con el inicio de Secion y registro*/
 .containner {
     position: relative;
@@ -96,6 +156,7 @@ header nav a.activo {
     background: linear-gradient(rgb(30, 30, 30), rgba(255, 215, 0, 0.3));
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
 }
+
 
 /*Parte de la izquierda (Informacion) */
 .contenido {
@@ -109,7 +170,7 @@ header nav a.activo {
     height: 100%;
     padding: 80px;
     color: white;
-    
+
 }
 
 .logo-sesion {
@@ -143,7 +204,7 @@ header nav a.activo {
     right: 0;
     width: calc(100% - 48%);
     height: 100%;
-    
+
 }
 
 /* inputs del formulario*/
@@ -157,7 +218,7 @@ header nav a.activo {
     height: 100%;
     border-radius: 20px;
     color: white;
-   
+
 }
 
 .caja-form h2 {
@@ -172,7 +233,7 @@ header nav a.activo {
     height: 40px;
     border-bottom: 3px solid #e4e4e4;
     margin: 20px 0;
-   
+
 }
 
 .input-caja input {
@@ -185,7 +246,7 @@ header nav a.activo {
     color: white;
     font-weight: 500;
     padding: 20px;
-    
+
 }
 
 .input-caja label {
@@ -196,7 +257,7 @@ header nav a.activo {
     transform: translateY(-50%);
     font-weight: 500;
     pointer-events: none;
-   
+
 }
 
 .input-caja input:focus~label,
@@ -221,7 +282,7 @@ header nav a.activo {
     margin: -15px 0 15px;
 }
 
-.btn{
+.btn {
     width: 100%;
     height: 25px;
     background: var(--BotonesPrimarios);
@@ -239,7 +300,7 @@ header nav a.activo {
 /*Parte de Registro*/
 
 /*CSS de las Fotos*/
-.imagen-perfil{
+.imagen-perfil {
     width: 40px;
     height: 40px;
     object-fit: cover;
@@ -248,7 +309,7 @@ header nav a.activo {
     margin: 2px;
     border-radius: 50%;
     border: 2px solid var(--Encabezado);
-    
+
 }
 
 .galeria1 {
@@ -263,14 +324,14 @@ header nav a.activo {
 
 /*CSS de los Inputs de Registro*/
 
-.Registrar{
+.Registrar {
     font-size: 14.5px;
     font-weight: 500;
     text-align: center;
     margin-top: 25px;
 }
 
-.Registrar p, 
+.Registrar p,
 a {
     color: white;
     text-decoration: none;
@@ -283,7 +344,7 @@ a {
     text-decoration: underline;
 }
 
-.sele{
+.sele {
     width: 100%;
     height: 10%;
     margin-top: -30px;
@@ -292,7 +353,7 @@ a {
 
 /*Movimiento de las cajas de registro y inicio*/
 
-.inicio{
+.inicio {
     transform: translateX(0);
     transition: transform 1s ease;
 }
@@ -313,4 +374,152 @@ a {
 }
 
 
+/*Css del banner*/
 
+.baner {
+    width: 1300px;
+    height: 500px;
+    margin: 10px auto;
+    border-radius: 2rem;
+    background-color: #FFFFFF;
+    background: url(/img/bendefe.png);
+}
+
+
+/*Css de las cajas de seccion cambio*/
+.ofertas {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    margin-top: 2rem;
+}
+
+
+
+.oferta-1 {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(30.3% - 20px);
+    background-color: rgba(228, 228, 228, 0.281);
+    padding: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    box-shadow:  0 0 20px rgba(255, 255, 255, 0.281);
+}
+
+.ofertas img {
+    width: 70%;
+    flex-basis: 50%;
+    border-radius: 20%;
+}
+
+.oferta-text {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.oferta-text h3 {
+    color: var(--TituloProducto);
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: hsla(0, 0%, 89%, 0.212);
+    color: var(--TextoPrincipal);
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/*Parte de Productos*/
+
+.productos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.productos h2 {
+    color: var(--MegaTitulo);
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.product-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.producto{
+    text-align: center;
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    box-shadow:  0 0 20px rgba(255, 255, 255, 0.281);
+    border-radius: 20px;
+}
+
+.producto img{
+    width: 250px;
+    height: 270px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.producto h3{
+    font-size: 20px;
+    color: var(--TituloProducto);
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.producto-txt p, .precio{
+    font-size: 16px;
+    color:var(--TextoPrincipal) ;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 800;
+}
+
+
+/*footer*/
+
+.footer{
+    padding: 50px 0 ;
+    background-color: var(--FondoFooter);
+}
+
+.footer-conten{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.link h3{
+font-size: 18px;
+color: var(--TextoPrincipal);
+font-family: "Poppins", sans-serif;
+text-transform: uppercase;
+margin-bottom: 20px;
+}
+
+.link a{
+    font-size: 16px;
+    color: var(--TextoPrincipal);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.link ul, li{
+    list-style: none;
+}
